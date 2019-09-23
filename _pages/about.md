@@ -4,26 +4,21 @@ title: About
 permalink: /about/
 ---
 
-[Reverie](https://github.com/amitmerchant1990/reverie) is a Jekyll theme which is simple and opinionated. It's actually a fork of [jekyll-now](https://github.com/barryclark/jekyll-now) with some additional features and personal touches which I've implemented to suit my needs for [my blog](https://www.amitmerchant.com).
+Welcome to python 911, this blog is dedicated to Python basic tutorials. I hope to take a different approach to introducing Python to none programmers.
 
-This is a plug-and-play Jekyll theme which you can use on GitHub Pages without even setting up a local environment.
+By introducing Python basics from the point of view of the student, with clear short term goals and specific action items, I hope to maintain the attention and ease learners into the world of computer programming using Python.
 
-## Features
+## This series will consist of
 
-- Command-line free fork-first workflow, using GitHub.com to create, customize and post to your blog
-- Fully responsive and mobile optimized base theme
-- Sass/Coffeescript support using Jekyll 2.0
-- Free hosting on your GitHub Pages user site
-- All the SEO goodies comes in-built
-- Markdown blogging
-- Syntax highlighting using Pygments
-    - [Dracula syntax theme](https://draculatheme.com/) included
-- Disqus commenting
-- Google Analytics integration
-- Fuzzy search across blog posts
-- Pagination of posts works out-of-the-box.
-- Categorize posts out-of-the box
-- RSS Feed
-- In-built sitemap
+* Small size projects (10:00 to 15:00 minutes)
+* Introduse programming vocabulary
+* Introduce Python as a general purpose programming language
+* Short sumaries
+* Practice exorcises
+* Action items for next lesson/tutorial
 
-Learn more about it [here](https://github.com/amitmerchant1990/reverie) on how to get started.
+These tutorials are free of charge, but any donations will be greatly appreciated. Feel free to donate through my Patron account.
+
+Thank you for your time
+
+Enrique

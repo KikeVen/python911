@@ -4,4 +4,4 @@ title: Tutorials
 permalink: /tutorials/
 ---
 
-# Welcome to the Tutorials page, here to help
+## Welcome to the Tutorials page, here to help
