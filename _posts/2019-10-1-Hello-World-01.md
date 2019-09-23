@@ -8,7 +8,7 @@ Lets write our first program. If you are reading this you have access to a brows
 
 Our friend Jimmy is looking to write a program, he doesn't know where to beging, but he knows what the out come should be.
 
-![Hello Jimmy](/images/jimmy_hello.png)
+[<img src="{{ site.baseurl }}/images/jimmy_hello.png" alt="Constructocat by https://github.com/jasoncostello" style="width: 400px;"/>]({{ site.baseurl }}/)
 
 Now that we know what he wants, lets outline what we will need.
 
@@ -58,7 +58,7 @@ We are going to use **[Trinket.io](https://trinket.io/embed/python3/c0a3e920df)*
   * Press the **>Run** button on the top bar
   * On the right side panel notice the result of your program
 
-![Hello World](/images/trinket.io-01.png)
+[<img src="{{ site.baseurl }}/images/trinket.io-01.png" alt="Constructocat by https://github.com/jasoncostello" style="width: 400px;"/>]({{ site.baseurl }}/)
 
 * The command `print()` in Python is called a **Function** or in this case a **built-in function** because it comes standard with Python and enables the programmer to cast to screen any message. In this case our message goes in quatations because we want to display exactly what we type.
 
