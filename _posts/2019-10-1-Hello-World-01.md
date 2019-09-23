@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hello World - Print text to screen
+title: Hello World - Print text to screen - 01
 categories: [print(), Online Interpreter]
 ---
 
@@ -13,7 +13,7 @@ Our friend Jimmy is looking to write a program, he doesn't know where to beging,
 Now that we know what he wants, lets outline what we will need.
 
 * [x] Knows what he wants (display the phrase "Hellow World!" on a computer screen)
-* [x] Writing and running the program
+* [x] About writing a Python program
 * [x] The online interpreter
 * [x] Writing & Executing the program
 
@@ -23,7 +23,7 @@ He wants to display the following sentence **"Hello World!"** on a computer scre
 
 > In Python the action of displaying any value to a device screen is refereed to as **"print"**
 
-## We need a place for Jimmy to write his program
+## About writing a Python program
 
 Jimmy will need a place to write his first program, he could write it in a text file and save it, which is completely valid, but how would he make it run?
 
@@ -68,7 +68,7 @@ We are going to use **[Trinket.io](https://trinket.io/embed/python3/c0a3e920df)*
 
 Now that Jimmy has written his first program, we can say it was relatively easy.
 
-## Try a different message
+## Things to try
 
 Now lets have you change Jimmy's message to one of your own. Remember since it is a **string** it needs to be in quotes
 
