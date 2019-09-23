@@ -8,7 +8,7 @@ Lets write our first program. If you are reading this you have access to a brows
 
 Our friend Jimmy is looking to write a program, he doesn't know where to beging, but he knows what the out come should be.
 
-[<img src="{{ site.baseurl }}/python911/images/jimmy_hello.png" alt="Constructocat by https://github.com/jasoncostello" style="width: 400px;"/>]({{ site.baseurl }}/)
+[<img src="{{ site.baseurl }}/python911/images/jimmy_hello.png" alt="Constructocat by https://github.com/jasoncostello"/>]({{ site.baseurl }}/)
 
 Now that we know what he wants, lets outline what we will need.
 
