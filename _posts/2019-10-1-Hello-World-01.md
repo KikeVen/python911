@@ -60,11 +60,11 @@ We are going to use **[Trinket.io](https://trinket.io/embed/python3/c0a3e920df)*
 
 [<img src="{{ site.baseurl }}/images/trinket.io-01.png" alt="Constructocat by https://github.com/jasoncostello" style="width: 700px;"/>]({{ site.baseurl }}/)
 
+> You did it, you printed the phrase **"Hello World!"** to a computer screen.
+
 * The command `print()` in Python is called a **Function** or in this case a **built-in function** because it comes standard with Python and enables the programmer to cast to screen any message. In this case our message goes in quatations because we want to display exactly what we type.
 
 * Anything in quotes is called a **String**, so **"Hello World!"** is refereed to as a string.
-
-> You did it, you printed the phrase "Hello World!" to a computer screen.
 
 Now that Jimmy has written his first program, we can say it was relatively easy.
 
