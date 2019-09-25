@@ -15,7 +15,6 @@ For our next project we are going to build a temperature converter, by using the
 * [x] What is the order of operation
 * [x] Launch and write the script
 * [x] Print the results
-* [x] Temporary container for feeding different temperatures to be converter
 
 ## Temperature convertion equation
 
@@ -39,17 +38,18 @@ There are a couple of things we need to know about numbers in Python to begin th
 
 ### Number types (categories)
 
-From this point on we will reffer to number categories as **types**
+From this point on, we will reffer to number categories as **types**
 
-These are the three most common number **Types**, there are more, they will be introduced at a later point
+These are the two most common number **Types**, **Intergers** and **Floats**, there are more but those will come later.
 
 Literal | Type | Python
 ---|---|---
-1234, -24, 0, 999999 | Integer | int
-1.23, 1. , 3.14e | Floating-point | float
-True, False | Boolean type | bool
+1234, -24, 0, 999999 | **Integer** | int(x)
+1.23, 1. , 3.14e | **Float** | float(x)
+51924361L, 0122L | Long | long(x)
+45.j, 3.14j | Complex | complex(x)
 
-There is a built-in function in python called `type()` Try it in your Online Interactive Consul
+There is a **built-in function** in python called `type()` Try it in your Online Interpreter, Trinket.
 
 ```python
 print(type(1.76))
@@ -71,12 +71,15 @@ Operator | use | description
 ```python
 # The following would execute in Python but you
 # would not be able to see the result in Trinket
-# Why?
+# Why? think about it, lets keep going
 
 32 + 4
 ```
 
-As I mentioned, there are more but these are the ones we are going to use today. There is a list of numbers and operators available in the Python documentation I will put the links below.
+There is a list of numbers and operators available in the Python documentation, see the links below.
+
+* [Numeric types and operators](https://docs.python.org/3/library/stdtypes.html?highlight=operators#numeric-types-int-float-complex)
+* 
 
 ## Order of operationos in Python
 
@@ -87,7 +90,7 @@ It is important to know Python follow an order of operation, there is a hierarch
 3. Multiplication or Division next `x * y` or `x / y`
 4. Addition or Subtraction next `x + y` or `x - y`
 
-## Launch interpreter and write the script
+## Launch the interpreter and write the script
 
 To write our application lets launch our Online Python Interpreter, **Trinket**.
 
@@ -118,42 +121,12 @@ If you run the code again, you will see it automatically just print the result o
 
 > You did it, you wrote a temperature converter!
 
-## Not done yet, we want to add a temporary container
-
-So we would like to isolate the changing Fahrenheit number so it is easier to convert different numbers.
-
-A temporary container in Python is called a **variable**
-
-We can **assign** different **values** to a **variable**.
-
-Lets say we have the temperature 75 degrees Fahrenheit and we want to assign it to a variable
-
-We can write any variable name, there are a few restrictions, which I'll list below. For now we could use a descriptive word to represent the variable
-
-* We will call our variable `temp_f`
-  * Representing "temperature in Fahrenheit"
-  * To the variable we will assign the temperature in Fahrenheit we want to convert
-
-This can be red as: the value of 75 was assigned to the temp_f variable or the current value of temp_f is 75
-
-* `temp_f = 75`
-
-We now have to modify our current program to include our variable
-
-```python
-temp_f = 75
-print((temp_f - 32) * 5/9)
-```
-
-We removed the 75 from the previous program and added the variable name in its place, also included the variable with it's assignment above the equation.
-
-Run your program, it should give you the same result as before. If you want to convert a different temperature, just change the value in your variable and run the program again.
-
 ## Things to try
 
-* Can you `type()` the `temp_f` variable?
-* Can you come up with a different calculator (equation)?
+* Try finding and adapting a different equation, such as finding the volume of a water tank.
+* find out the type of your results by using the `type()` function
 
 ## Question
 
-* What happens to the variable type if you change the value of `temp_f` from a 75 to 75.5?
+* What are the two most commun number types used in Python?
+* What are two built-in functions you have learned up to now?
