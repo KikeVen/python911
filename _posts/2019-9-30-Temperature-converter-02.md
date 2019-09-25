@@ -60,7 +60,7 @@ print(type(1.76))
 
 There are a multitude of operators, today we are going to list the must commonly used.
 
-Operator | use | description
+Operator | expression | description
 ---------|-----|------------
 `+` | x + y | Addition
 `-` | x - y | Subtraction
