@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hello World - Print text to screen - 01
+title: Print text to screen - Hello World - 01
 categories: [print(), Online Interpreter]
 ---
 

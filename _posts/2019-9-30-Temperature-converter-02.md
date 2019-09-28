@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Temperature converter - by using numbers - 02
+title: Using Python numbers - the temperature converter script - 02
 categories: [intergers, decimals, addition, multiplication, subtraction, order of operations]
 ---
 
