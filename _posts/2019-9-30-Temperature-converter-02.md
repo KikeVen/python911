@@ -68,6 +68,8 @@ Operator | expression | description
 `/` | x / y | Division
 `**` | x ** y | Power (exponentiation)
 
+---
+
 ```python
 # The following would execute in Python but you
 # would not be able to see the result in Trinket
@@ -79,7 +81,6 @@ Operator | expression | description
 There is a list of numbers and operators available in the Python documentation, see the links below.
 
 * [Numeric types and operators](https://docs.python.org/3/library/stdtypes.html?highlight=operators#numeric-types-int-float-complex)
-* 
 
 ## Order of operationos in Python
 
