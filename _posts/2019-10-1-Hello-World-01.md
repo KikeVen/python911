@@ -43,8 +43,6 @@ We are going to use **[Trinket.io](https://trinket.io/embed/python3/c0a3e920df)*
 
 * [Trinket.io](https://trinket.io/embed/python3/c0a3e920df)
 
-> Another alternative would be [onlinegdb.com](https://www.onlinegdb.com/online_python_interpreter)
-
 ### Simple instruction for using Trinket
 
 * [x] Write code on the left side panel
