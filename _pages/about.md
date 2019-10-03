@@ -19,6 +19,8 @@ By introducing Python basics from the point of view of the student, with clear s
 
 These tutorials are free of charge, but any donations will be greatly appreciated. Feel free to donate through my Patron account.
 
+<a href="https://www.patreon.com/bePatron?u=15482170" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
+
 Thank you for your time
 
 Enrique
