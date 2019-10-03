@@ -4,6 +4,8 @@ title: Using Python numbers - the temperature converter script - 02
 categories: [intergers, decimals, addition, multiplication, subtraction, order of operations]
 ---
 
+<a href="https://www.patreon.com/bePatron?u=15482170" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
+
 In our last tutorial we learned to **print** a **string** to screen by using the built-in function `print()`
 
 For our next project we are going to build a temperature converter, by using the print function and math in Python
@@ -131,3 +133,5 @@ If you run the code again, you will see it automatically just print the result o
 
 * What are the two most commun number types used in Python?
 * What are two built-in functions you have learned up to now?
+
+<a href="https://www.patreon.com/bePatron?u=15482170" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>

@@ -4,6 +4,8 @@ title: About
 permalink: /about/
 ---
 
+<a href="https://www.patreon.com/bePatron?u=15482170" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
+
 Welcome to python 911, this blog is dedicated to Python basic tutorials. I hope to take a different approach to introducing Python to none programmers.
 
 By introducing Python basics from the point of view of the student, with clear short term goals and specific action items, I hope to maintain the attention and ease learners into the world of computer programming using Python.
