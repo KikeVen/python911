@@ -4,9 +4,9 @@ title: Print text to screen - Hello World - 01
 categories: [print(), Online Interpreter]
 ---
 
-<a href="https://www.patreon.com/bePatron?u=15482170" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
-
 Lets write our first program. If you are reading this you have access to a browser and internet, which is all you are going to need for this first short tutorial.
+
+<a href="https://www.patreon.com/bePatron?u=15482170" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
 
 Our friend Jimmy is looking to write a program, he doesn't know where to beging, but he knows what the out come should be.
 
