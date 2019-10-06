@@ -1,7 +1,7 @@
 ---
 layout: post
-title: interpreter, IDLE and Interactive interpreter - Python Install - 04
-categories: [interpreter, IDLE, Interpreter, Win, Mac, Linux]
+title: The Python Interpreter, IDLE and Intereactive Session - Python Install - 04
+categories: [Python interpreter, IDLE, Intereactive Session, Win, Mac, Linux]
 ---
 
 Now that we have learned a few Python Basics we should install the Python interpreter in our system. This is relatively easy and fast. We are going to do a basic installation, at a later point if you have special needs, you may customize your installation.
@@ -32,7 +32,7 @@ As we navigate to the site, with our browser, it should be able to recognize and
 
 This will start downloading the installer on to your computer.
 
-> The screen shot below shows the laters version for Windows, but if you are using a Mac or Linux system it will show the appropriate installer for your system.
+> The screen shot below shows the latest version for Windows, but if you are using a Mac or Linux system it will show the appropriate installer for your system.
 
 [<img src="{{ site.baseurl }}/images/python-org_download.png" alt="Python.org download page" style="width: 700px;"/>]({{ site.baseurl }}/)
 
@@ -52,14 +52,14 @@ Run the installer, it will ask you if you want to do a default installation or c
 
 Although the MacOS comes with an older version of Python installed, Python 2.7, it isn't recommended for developing as it will be faced out later in 2019. **We need to get the most resent stable version of Python.**
 
-There are different methods for installing python on the Mac OS, one by installing
+There are different methods for installing python on the Mac OS
 
 * The same way as we did in Windows or
 * using HomeBrew.
 
 For the sake of continuity and simplicity we will install it similarly as described for windows.
 
-Once you have downloaded the latest version of Python as described above in "**Downloading Python**" from <http://www.python.org>
+Once you have downloaded the latest version of Python, as described above in "**Downloading Python**" from <http://www.python.org>
 
 * Run the Python installer to install the latest version of Python
   * If prompted for setting PATH variable, make sure to select it.
@@ -92,12 +92,12 @@ We will use a method compatible with some Debian based Linux distributions. **Th
 There are a number of components installed with your version of Python. We are going to briefly look at three of them.
 
 * The Python interpreter
-* The interactive prompt
+* Python Intereactive Session
 * IDLE
 
 ### The Python interpreter
 
-The python interpreter is the program that executes the scripts we write, The interpreter interprets your code into something the computer can understand. Python is an **interpreted language**, it needs that layer between the script and computer hardware. There are other interpreted languages, like Java, Java Script, PHP and so on.
+The python interpreter is the program that executes the scripts we write, The interpreter translates your code into something the computer can understand. Python is an **interpreted language**, it needs that layer between the script and computer hardware. There are other interpreted languages, like Java, Java Script, PHP and so on.
 
 [<img src="{{ site.baseurl }}/images/interpreted.svg" alt="Interpreted language by Enrique Bruzual" style="width: 700px;"/>]({{ site.baseurl }}/)
 
@@ -107,11 +107,11 @@ In contrast there are compiled languages like C, C++, Swift, Objective-C and oth
 
 > There are some advantages and disadvantages between compiled and interpreted languages, we will cover this at a later point.
 
-In Python you can write a Script and distrubute the same file to different Operating Systems, MacOS, Windos, Linux, Android, iOS and other devices, as long as they have the Python interpreter installed they can run the script file.
+In Python you can write a Script and distrubute the same file to different Operating Systems, MacOS, Windos, Linux, Android, iOS and other devices, as long as they have the Python interpreter installed they can run your script file.
 
 [<img src="{{ site.baseurl }}/images/multiple_os.svg" alt="Multiple OS by Enrique Bruzual" style="width: 700px;"/>]({{ site.baseurl }}/)
 
-### The interactive prompt
+### Python Intereactive Session
 
 Depending on you operating system this can be accessed through your **"system shell prompt"**
 
@@ -128,6 +128,7 @@ Your terminal will run a **Python Interactive Session** on the **same terminal w
   * `>>> print('Hello world!')`
   * Press `Enter`
   * The command will execute and return the results below the entered command
+  * And then be ready for your next command `>>>`
 
 ```python
 >>> print('Hello world')
@@ -135,9 +136,9 @@ Hello world
 >>>
 ```
 
-Although we use the print() function in the above, in an interactive session is not needed. You can just type the string in quotes and it will return the string when you press `Enter`.
+Although we use the print() function in the example above, in a Python Interactive Session the `print()` is not needed. You can just type the string in quotes and it will return the string when you press `Enter`.
 
-But it is very usufull for testing and quick execution of short programs.
+But Python Interactive Session is very usufull for testing and quick execution of short programs or parts of a larger program.
 
 * Type `round(34.654444, 2)`
 * Press `Enter`
@@ -150,9 +151,15 @@ But it is very usufull for testing and quick execution of short programs.
 
 * It will excute the function and display without using the print function. This is only possible with a **Python Intereactive Session**, if you write a program and save it to a python document you need to use the `print()` function if you want to display results to a screen
 
-* Although it is a convenient way to test commands, modules and short scripts -- it isn't suitable for writing entire programs, for that we would use the included IDLE editor which allow us to **save our script** to a file and later **run them**.
+* Although a **Python Intereactive Session** is a convenient way to test commands, modules and short scripts -- it isn't suitable for writing entire programs, for that we would use the included IDLE editor which allow us to **save our script** to a file and later **run them**.
 
 > To exit a **Python Intereactive Session** simply type `quit()` and press `Enter`
+
+```python
+>>> quit()
+
+C:>
+```
 
 ### IDLE
 
