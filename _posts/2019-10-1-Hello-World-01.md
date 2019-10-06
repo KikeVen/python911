@@ -10,7 +10,7 @@ Lets write our first program. If you are reading this you have access to a brows
 
 Our friend Jimmy is looking to write a program, he doesn't know where to beging, but he knows what the out come should be.
 
-[<img src="{{ site.baseurl }}/images/jimmy_hello.png" alt="Constructocat by https://github.com/jasoncostello" style="width: 700px;"/>]({{ site.baseurl }}/)
+[<img src="{{ site.baseurl }}/images/jimmy_hello.png" alt="Jimmy hello by Enrique Bruzual" style="width: 700px;"/>]({{ site.baseurl }}/)
 
 Now that we know what he wants, lets outline what we will need.
 
@@ -58,7 +58,7 @@ We are going to use **[Trinket.io](https://trinket.io/embed/python3/c0a3e920df)*
   * Press the **>Run** button on the top bar
   * On the right side panel notice the result of your program
 
-[<img src="{{ site.baseurl }}/images/trinket.io-01.png" alt="Constructocat by https://github.com/jasoncostello" style="width: 700px;"/>]({{ site.baseurl }}/)
+[<img src="{{ site.baseurl }}/images/trinket.io-01.png" alt="Trinket io" style="width: 700px;"/>]({{ site.baseurl }}/)
 
 > You did it, you printed the phrase **"Hello World!"** to a computer screen.
 
