@@ -44,12 +44,12 @@ From this point on, we will reffer to number categories as **types**
 
 These are the two most common number **Types**, **Intergers** and **Floats**, there are more but those will come later.
 
-Literal | Type | Python
----|---|---
-1234, -24, 0, 999999 | **Integer** | int(x)
-1.23, 1. , 3.14e | **Float** | float(x)
-51924361L, 0122L | Long | long(x)
-45.j, 3.14j | Complex | complex(x)
+| Literal              | Type        | Python     |
+| -------------------- | ----------- | ---------- |
+| 1234, -24, 0, 999999 | **Integer** | int(x)     |
+| 1.23, 1. , 3.14e     | **Float**   | float(x)   |
+| 51924361L, 0122L     | Long        | long(x)    |
+| 45.j, 3.14j          | Complex     | complex(x) |
 
 There is a **built-in function** in python called `type()` Try it in your Online Interpreter, Trinket.
 
@@ -62,13 +62,13 @@ print(type(1.76))
 
 There are a multitude of operators, today we are going to list the must commonly used.
 
-Operator | expression | description
----------|-----|------------
-`+` | x + y | Addition
-`-` | x - y | Subtraction
-`*` | x * y | Multiplication
-`/` | x / y | Division
-`**` | x ** y | Power (exponentiation)
+| Operator | expression | description            |
+| -------- | ---------- | ---------------------- |
+| `+`      | x + y      | Addition               |
+| `-`      | x - y      | Subtraction            |
+| `*`      | x * y      | Multiplication         |
+| `/`      | x / y      | Division               |
+| `**`     | x ** y     | Power (exponentiation) |
 
 ---
 
