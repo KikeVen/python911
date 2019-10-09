@@ -34,7 +34,7 @@ This will start downloading the installer on to your computer.
 
 > The screen shot below shows the latest version for Windows, but if you are using a Mac or Linux system it will show the appropriate installer for your system.
 
-[<img src="{{ site.baseurl }}/images/python-org_download.png" alt="Python.org download page" style="width: 700px;"/>]({{ site.baseurl }}/)
+[<img src="{{ site.baseurl }}/images/python-org_download.png" alt="Python.org download page" style="width: 700px;"/>]({{ site.baseurl }}/images/python-org_download.png)
 
 The download page will also give you options if you want to download Python for a different OS and versions.
 
@@ -99,17 +99,17 @@ There are a number of components installed with your version of Python. We are g
 
 The python interpreter is the program that executes the scripts we write, The interpreter translates your code into something the computer can understand. Python is an **interpreted language**, it needs that layer between the script and computer hardware. There are other interpreted languages, like Java, Java Script, PHP and so on.
 
-[<img src="{{ site.baseurl }}/images/interpreted.svg" alt="Interpreted language by Enrique Bruzual" style="width: 700px;"/>]({{ site.baseurl }}/)
+[<img src="{{ site.baseurl }}/images/interpreted.svg" alt="Interpreted language by Enrique Bruzual" style="width: 700px;"/>]({{ site.baseurl }}/images/interpreted.svg)
 
 In contrast there are compiled languages like C, C++, Swift, Objective-C and others. For each program (Script) an executable needs to be created [compiled] into **Machine Code** for each OS, this is only done once and then needs to be distributed.
 
-[<img src="{{ site.baseurl }}/images/compiled.svg" alt="Compile language by Enrique Bruzual" style="width: 700px;"/>]({{ site.baseurl }}/)
+[<img src="{{ site.baseurl }}/images/compiled.svg" alt="Compile language by Enrique Bruzual" style="width: 700px;"/>]({{ site.baseurl }}/images/compiled.svg)
 
 > There are some advantages and disadvantages between compiled and interpreted languages, we will cover this at a later point.
 
 In Python you can write a Script and distrubute the same file to different Operating Systems, MacOS, Windos, Linux, Android, iOS and other devices, as long as they have the Python interpreter installed they can run your script file.
 
-[<img src="{{ site.baseurl }}/images/multiple_os.svg" alt="Multiple OS by Enrique Bruzual" style="width: 700px;"/>]({{ site.baseurl }}/)
+[<img src="{{ site.baseurl }}/images/multiple_os.svg" alt="Multiple OS by Enrique Bruzual" style="width: 700px;"/>]({{ site.baseurl }}/images/multiple_os.svg)
 
 ### Python Intereactive Session
 
@@ -121,7 +121,7 @@ Depending on you operating system this can be accessed through your **"system sh
 
 Your terminal will run a **Python Interactive Session** on the **same terminal windown**
 
-[<img src="{{ site.baseurl }}/images/command_prompt.png" alt="command prompt" style="width: 700px;"/>]({{ site.baseurl }}/)
+[<img src="{{ site.baseurl }}/images/command_prompt.png" alt="command prompt" style="width: 700px;"/>]({{ site.baseurl }}/images/command_prompt.png)
 
 * When you see a screen similar to the one above, you are in a **Python Intereactive Session**.
 * The `>>>` indicates, is ready for you to type any python command
@@ -188,13 +188,13 @@ IDLE will launch an **Interactive Shell** running a **Python Intereactive Sessio
 
 It behaves in the same way as the **"system shell prompt"** we used before
 
-[<img src="{{ site.baseurl }}/images/idle_shell.png" alt="IDLE shell" style="width: 700px;"/>]({{ site.baseurl }}/)
+[<img src="{{ site.baseurl }}/images/idle_shell.png" alt="IDLE shell" style="width: 700px;"/>]({{ site.baseurl }}/images/idle_shell.png)
 
 * To create a new script, under the `File` menu, select `New file`
 
 * This will launch a **blank script document**. Here we can write our scripts and save them.
 
-[<img src="{{ site.baseurl }}/images/untitled_idle_doc.png" alt="Untitled IDLE doc" style="width: 700px;"/>]({{ site.baseurl }}/)
+[<img src="{{ site.baseurl }}/images/untitled_idle_doc.png" alt="Untitled IDLE doc" style="width: 700px;"/>]({{ site.baseurl }}/images/untitled_idle_doc.png)
 
 **To save:** Under `File` menu, select `Save`
 
