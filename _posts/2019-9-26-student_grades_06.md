@@ -283,7 +283,8 @@ grade_average = round(sum_grade/number_of_grades, 1)
 
 Lets format and print the results to screen, we would like it to look like this:
 
-```pre
+```python
+'''
 +------------------------------------------------+
  Student Name: Beth O'Brien
 +------------------------------------------------+
@@ -292,12 +293,15 @@ Lets format and print the results to screen, we would like it to look like this:
  Semester grades:
  [75.3, 75.8, 80.3, 83.5, 87.9, 89.5, 90.5, 95.0]
 +------------------------------------------------+
+'''
 ```
 
 #### First lets make our horizontal separator
 
-```pre
+```python
+'''
 +------------------------------------------------+
+'''
 ```
 
 We can use the **total number of characters** in the `sorted_grades` variable as a guide to create the correct legnth horizontal line.
@@ -370,7 +374,7 @@ separator = '-' * line_length
 
 We are going to use the f-string to format our output.
 
-* We will use triple quoats for multiple lines
+* We will use triple quoats for multiple lines.
 * we will add the `+` character inside the **f-string** to the front and end of f-string parameter `+{separator}+` .
 
 Lets add the `print()` to the **f-string**.
@@ -408,7 +412,8 @@ print(f'''
 
 When you run the program it should print the results as formatted.
 
-```txt
+```python
+'''
 +------------------------------------------------+
  Student Name: Beth O'Brien
 +------------------------------------------------+
@@ -417,6 +422,7 @@ When you run the program it should print the results as formatted.
  Semester Grades:
  [75.3, 75.8, 80.3, 83.5, 87.9, 89.5, 90.5, 95.0]
 +------------------------------------------------+
+'''
 ```
 
 That is it for our grade calculator program, it is very basic, but I got a chance to introduce some new programming concepts.
