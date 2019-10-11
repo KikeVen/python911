@@ -19,7 +19,7 @@ What we need in order to write the program
 * Output formatting
 * Write the program
 
-You work at a school's IT departament, a teacher asked you to write a simple program that will calculate the lowest, highest, avergage grade and return the grades sorted of a given students. The grades are final, so they don't have to be edited. 
+You work at a school's IT departament, a teacher asked you to write a simple program that will calculate the lowest, highest, average grade and return the grades sorted of a given students. The grades are final, so they don't have to be edited.
 
 * Go!
 
@@ -111,7 +111,7 @@ If we convert that single value variable into a **Tuple** containing a single va
 
 * We can do this by putting the single value inside parenthesis `()`
 * This tells python you are passing a "list", in this case a **Tuple** of a single object
-* The `len()` built-in function will accept it now
+* The `len()` built-in function will accept it now.
 
 ```python
 >>> grade = (89)
@@ -131,7 +131,7 @@ But more specifically to our case, we want the length of our grades.
 
 ### min() and max ()
 
-These two functions will return the **highest** and **lowest** grade respectivley.
+These two functions will return the **highest** and **lowest** grades respectivley.
 
 ```python
 >>> student_grades = (89.5, 80.3, 90.5, 75.8, 95.0, 75.3, 83.5, 87.9)
@@ -141,11 +141,11 @@ These two functions will return the **highest** and **lowest** grade respectivle
 95.0
 ```
 
-> If we were to "open the hud" on each of these built-in function, we would see a lot of code and calls to other functions.
+> If we were to "open the hood" of each of these built-in functions, we would see a lot of code and calls to other functions.
 
 ### sum()
 
-The sum() built-in function just cycles or (loops) though each of the grades adding them all up and retruning the total.
+The sum() built-in function cycles or (loops) through each of the grades adding them all up and returning the total.
 
 ```python
 >>> student_grades = (89.5, 80.3, 90.5, 75.8, 95.0, 75.3, 83.5, 87.9)
@@ -155,7 +155,7 @@ The sum() built-in function just cycles or (loops) though each of the grades add
 
 > What built-in function would you use to shorten the number of decimals to one place?.
 
-If you weren't using a built-in function to get the sum of a "list", it might look something like this to get the sum of a "list". It would require something call a `loop` and proper indentation which we will cover in our next tutorial
+If you weren't using a built-in function to get the sum of a "list", it might look something like this to get the sum of a "list". It would require something call a `loop` and proper indentation which we will cover in our next tutorial.
 
 ```python
 >>> student_grades = (89.5, 80.3, 90.5, 75.8, 95.0, 75.3, 83.5, 87.9)
@@ -166,11 +166,9 @@ If you weren't using a built-in function to get the sum of a "list", it might lo
 677.8000000000001
 ```
 
-We will explain how loops work in our next tutorial.
-
 ### sorted()
 
-The `sorted()` built-in function will return a copy of the Tuple with sorted grades, from smallest to largest grade.
+The `sorted()` built-in function will return a copy of the Tuple with sorted grades, from the smallest to the largest grade.
 
 ```python
 >>> student_grades = (89.5, 80.3, 90.5, 75.8, 95.0, 75.3, 83.5, 87.9)
@@ -186,9 +184,9 @@ There are two other types of older string formatting  you will encounter and sho
 
 F-strings allow us to imbed an expression inside a string.
 
-* f-string embed expressions inside a string literel using **brackets** `{}`
-* f-string are easier to use
-* f-strings execute faster than the other two types of string formatting
+* f-string embed expressions inside a string literel using **brackets** `{}`.
+* f-string are easier to use.
+* f-strings execute faster than the other two types of string formatting.
 
 
 ```python
@@ -196,13 +194,13 @@ F-strings allow us to imbed an expression inside a string.
 >>> f"Student name: {student_name}"
 ```
 
-So the code above would print to screen as follow, where the variable in **brackets** `{student_name}` gets replaced by its value
+So the code above would print to screen as follow, where the variable in **brackets** `{student_name}` gets replaced by its value.
 
 ```tex
 Student name: Beth O'Brien
 ```
 
-That is it for the theory portion, lets start coding our program
+That is it for the theory portion, lets start coding our program.
 
 ## Student Grade Calculator (SGC)
 
@@ -210,7 +208,7 @@ Lets open a new document in IDLE. Under **File**, select **New document**. You m
 
 ### Program Description
 
-At the top of your document you want to write a short description of your application within triple quotes
+At the top of your document you want to write a short description of your application within triple quotes.
 
 ```python
 """
@@ -220,7 +218,7 @@ Calculate the lowest, highest and average grade of a student
 
 ### Assign given values
 
-Assign the values I gave you to variables, **Student's name** and **Grades**
+Assign the values I gave you to variables, **Student's name** and **Grades**.
 
 ```python
 """
@@ -234,9 +232,9 @@ student_name = "Beth O'Brien"
 
 Now lets calculate some of the requested values, **highest grade**, **lowest grade**, **sorted grades** and **the sum of the grades** to calculate the **average** which will give us the **final grade**.
 
-1. Start by writing variable names which will represent the **returned value**
-2. **Assign** the the **built-in function** to the **variable** at the same time **passing** the appropriate **value as parameters** to the functions
-   1. `lowest_grade = min(student_grades)`
+1. Start by writing variable names which will represent the **returned value**.
+2. **Assign** the the **built-in function** to the **variable** at the same time **passing** the appropriate **value as parameters** to the functions.
+   1. `lowest_grade = min(student_grades)`.
 
 ```python
 """
@@ -255,14 +253,14 @@ sorted_grades = sorted(student_grades)
 
 ### Calculate grade average
 
-Now lets write the expression to calculate the grade average
+Now lets write the expression to calculate the grade average.
 
-1. We need to take the **sum_grade** and divide it by **total number of grades**
-   1. `sum_grade/number_of_grades`
-2. We need to round it to a single decimal point
-   1. `round(sum_grade/number_of_grades, 1)`
-3. We need to assign it to a variable
-   1. `grade_average`
+1. We need to take the **sum_grade** and divide it by **total number of grades**.
+   1. `sum_grade/number_of_grades`.
+2. We need to round it to a single decimal point.
+   1. `round(sum_grade/number_of_grades, 1)`.
+3. We need to assign it to a variable.
+   1. `grade_average`.
 
 ```python
 """
@@ -285,7 +283,7 @@ grade_average = round(sum_grade/number_of_grades, 1)
 
 Lets format and print the results to screen, we would like it to look like this:
 
-```txt
+```pre
 +------------------------------------------------+
  Student Name: Beth O'Brien
 +------------------------------------------------+
@@ -298,22 +296,22 @@ Lets format and print the results to screen, we would like it to look like this:
 
 #### First lets make our horizontal separator
 
-```txt
+```pre
 +------------------------------------------------+
 ```
 
 We can use the **total number of characters** in the `sorted_grades` variable as a guide to create the correct legnth horizontal line.
 
-In order to get a total count of all characters, first we convert `sorted_grades` to a string and then getting the count by using the `len()` function
+In order to get a total count of all characters, first we convert `sorted_grades` to a string and then getting the count by using the `len()` function.
 
-* `len(str(student_grades))`
+* `len(str(student_grades))`.
 
-Lets assign it to a variable
+Lets assign it to a variable.
 
-* `line_length = len(str(student_grades))`
-  * For this number set it will produce `48`
+* `line_length = len(str(student_grades))`.
+  * For this number set it will produce `48`.
 
-> The number of grades in the Tuple, will determin the size of the horizontal line
+> The number of grades in the Tuple, will determine the size of the horizontal line.
 
 ```python
 """
@@ -333,7 +331,7 @@ grade_average = round(sum_grade/number_of_grades, 1)
 line_length = len(str(student_grades))
 ```
 
-We can use this variable to draw the horizontal. If we multiply a string, i.e `-`, by `line_length` it will output that string multiplied by the value of our variable, `line_length`.
+We can use this variable to draw the horizontal line. If we multiply a string, i.e `-`, by `line_length` it will output that string multiplied by the value of our variable, `line_length`.
 
 This is **unique to Python**, because it knows is **a string** and when you **multiply** by a **given interger**, instead of giving you an error, it will take the string and print it that many times.
 
@@ -342,11 +340,11 @@ This is **unique to Python**, because it knows is **a string** and when you **mu
 ------------------------------------------------
 ```
 
-We can assign all this to a variable
+We can assign all this to a variable.
 
-* `separator = '-' * line_length`
+* `separator = '-' * line_length`.
 
-Lets add it to our program
+Lets add it to our program.
 
 ```python
 """
@@ -368,14 +366,14 @@ line_length = len(str(student_grades))
 separator = '-' * line_length
 ```
 
-#### Printing formated results to screen
+#### Printing formatted results to screen
 
-We are going to use the f-string to format our output..
+We are going to use the f-string to format our output.
 
 * We will use triple quoats for multiple lines
-* we will add the `+` character inside the **f-string** to the front and end of f-string parameter `+{separator}+`
+* we will add the `+` character inside the **f-string** to the front and end of f-string parameter `+{separator}+` .
 
-Lets add the `print()` to the **f-string**
+Lets add the `print()` to the **f-string**.
 
 ```python
 """
@@ -408,7 +406,7 @@ print(f'''
 ''')
 ```
 
-When you run the program it should print the results as formated.
+When you run the program it should print the results as formatted.
 
 ```txt
 +------------------------------------------------+
@@ -421,13 +419,13 @@ When you run the program it should print the results as formated.
 +------------------------------------------------+
 ```
 
-That is it for our grade calculator program, it is very basic, but I got a chance to introduce some new programming consepts
+That is it for our grade calculator program, it is very basic, but I got a chance to introduce some new programming concepts.
 
 ---
 
 ## Next tutorial
 
-We are going to assign a letter grade to the student based on their `grade_average`, I will introduce `for loop` and `while loop`
+We are going to assign a letter grade to the student based on their `grade_average`, I will introduce `for loop` and `while loop`.
 
 ## Things to try
 
