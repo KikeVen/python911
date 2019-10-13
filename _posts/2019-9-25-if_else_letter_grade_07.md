@@ -4,11 +4,13 @@ title: Letter grade - if Conditional Statement - 07
 categories: [if, Comparison operators, Boolean operators, Multiway branching]
 ---
 
-In this tutorial we are going to edit the previews grade calculator and add letter grades to be display right next to final grade average. We will use the **conditional statement** `if` and **comparison operators** `>=` and `>`.
+In this tutorial we are going to edit the previews Grade Calculator adding the code needed to display a letter grade, next to final grade average. We will use the **conditional statement** `if` and **comparison operators** `>=` and `>`.
 
 <a href="https://www.patreon.com/bePatron?u=15482170" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
 
-Our teacher now asked if we could add the letter grade next to the final grade and for that we are going to need to know the following.
+In our previous tutorial, a teacher asked us to create a Grade Calculator application, now she asks if we could add a letter grade next to the final grade.
+
+we are going to need to know the following to compleat this task.
 
 * The `if` Conditional Statement.
   * Comparison Operators.
@@ -19,33 +21,32 @@ Our teacher now asked if we could add the letter grade next to the final grade a
 
 ## The `if` Conditional statement
 
-Conditional statements allow us to make choices based on preconditioned criteria. We can use other statements to check the validity of these criteria such a **comparison operators** in order to return the correct response.
+Conditional statements, such as `if`, allow us to make choices based on preconditioned criteria.
+
+We can use other statements to check the validity of these criteria such a **comparison operators**, such as `==`, allowing us to test for validity.
+
+* In the example below, we want to test `if True == True`
+  * if the test returns `True`, then
+    * print "`Condition is True`"
+  * if the test returns `False`, then
+    * print "`Condition is False`"
 
 ```python
 condition = True
-if condition == True:
+if condition: # <==> if condition == True:
     print('Condition is True')
 else:
     print('Condition is False')
 ```
 
-* Assign value to variable, `condition = True`.
-* Write conditional statement
-`if condition == True:`.
-  * Notice `:` above, denotes end of statement.
-  * Anything indented below the condition statement will be executed if the condition is met.
-    * `print('Condition is True')`.
-  * Python indentation is standard to 4 spaces.
-* The `else` statement executes if the conditions above were `not` met.
-  * Again `:` signify end of statement.
-  * And the code to execute for the `else` statement is indented four spaces.
-    * `print('Condition is False')`.
+> Try changing the value of `condition` to `False` in the example above
+
 
 ### Comparison Operators
 
-We used the equality `==` operator above to check if a `condition` was equal `==` to `True`.
+We used the **equality** `==` operator above to check if a `condition` was equal `==` to `True`.
 
->Notice **equality** is dented by double `==`, but variable assignment is dentoed by `=`, cause of human error at times when not used properly.
+>Notice **equality** is dentoed by double `==`, but variable assignment is dentoed by `=`, cause of commun human error at times when not used properly.
 
 | Name                  | symbol |
 | --------------------- | ------ |
@@ -57,29 +58,42 @@ We used the equality `==` operator above to check if a `condition` was equal `==
 | greater than or equal | `>=`   |
 | membership            | `in`   |
 
-Lets look at some example using other **comparison operators**.
+Lets look at some example of other **comparison operators**.
 
-* Inequality `!=`
+* **Inequality** `!=`
 
 ```python
->>> n = 5
->>> n != 5
+>>> 5 != 5
 False
 ```
 
-* Less than `<`
+* **Less than** `<`
 
 ```python
->>> n = 5
->>> n < 8
+>>> 5 < 8
+True
+```
+
+* **Membership** `in`
+
+```python
+>>> 5 in (2, 4, 5)
 True
 ```
 
 ### Boolean Operators
 
-We can also do multiple comparisons by using a boolean operator lets use `or` remember your keyword list?
+We can also do multiple comparisons by using a boolean operator lets use `or`, boolean because when use it will return ether `True` or `False`
 
-* by using `or` we are comparing if any of ether are statements are `True`.
+> BTW: `True == 1` and `False == 0` try it!
+
+```python
+>>> True + 1
+2
+```
+
+* By using the boolean operator, `or`, we can test if any of the two comparative statements below are `True`
+  * It returns `True` because one condition passed the test `n < 10`
 
 ```python
 >>> n = 5
@@ -87,7 +101,10 @@ We can also do multiple comparisons by using a boolean operator lets use `or` re
 True
 ```
 
-* When we use `and` we are comparing both statements on ether side of the `and` are `True`.
+* When we use `and` both comparative statements tested need to pass for it to be `True`.
+* In this case is `False`.
+  * `5 < 5` is `False`
+  * immediately returning `False`.
 
 ```python
 >>> n = 5
@@ -95,7 +112,8 @@ True
 False
 ```
 
-* Another way of using the `and` comparison above, remove the `and` comparison and the variable `n`.
+* An alternative to using the comparison `and` above, remove the `and` comparison and the variable `n`.
+  * This `5 < n and n < 10` is the same as `5 < n < 10`
 
 ```python
 >>> n = 5
@@ -105,13 +123,13 @@ False
 
 ### Multiway Branching
 
-Multiway Branching allows to have multiple conditions tested in a sequence tied by the statement `elif` between the `if` and the `else` statements.
+Multiway Branching allows to have multiple conditions tested in a sequence by the statement `elif`, between the `if` and the `else` statements.
 
 * `elif` stands for **if else**.
 * `elif` is used to tie multiple `if` statements together.
 * You can have any number of `elif` statements as you like.
 * It will execute the first test is passed, in the case `True`.
-  * Below none of the conditions are met until it reaches. `color == "yellow"`
+  * Below none of the conditions are met until it reaches `color == "yellow"`
 
 > Notice how we are using the **f-string** format to pass the `{color}` variable.
 
@@ -127,7 +145,12 @@ else:
     print(f"I can not match the color {color}")
 ```
 
-This covers the necessary material to move on to our letter grade script.
+We covered some of the necessary topics to begin to write our script.
+
+* The `if` Conditional Statement.
+  * Comparison Operators.
+  * Boolean Operators.
+  * Multiway Branching.
 
 ## Letter grade script
 
@@ -143,16 +166,15 @@ So our later grade ranges would be:
 | D      | 60 to 69    |
 | F      | < to 60     |
 
-So to write the if statements, we would use Multi Branching.
+For these many conditions to be tested, we would have to use Multi Branching, `elif` between the first `if` and the `else` statements
 
-We are going to say `if` `grade_average` is between 100 and 86 then it needs to return the letter A and so on down the line with all the letter grades.
+We are going to say `if` `grade_average` is between **100** and **86** then it needs to return the **letter A** and so on down the line with all the letter grades.
 
 * We could write it like this:
   * `if 100 >= grade_average and grade_average >= 90:`.
 
 * But we can shorten the line above by writing:
   * `if 100 >= grade_average >= 90:`.
-    * if `grade_average` is between 90 and 100.
     * `letter_grade = "A"`.
 * `elif` states.
   * if `grade_average` is less than 90 but equal or greater than 80 then:
@@ -177,13 +199,15 @@ else:
 
 ## Add code block to Grade Calculator
 
-We need to do two things, add the conditional code block to the Grade Calculator script and the `letter_grade` variable to the **f-string**.
+* We need to do two things
+  * Add the conditional code block to the **Grade Calculator script**.
+  * And the `letter_grade` variable to the **f-string**.
 
-* lets copy the code block and paste it to the Grade Calculator just above the `print()` function.
+* Lets copy the code block and paste it to the **Grade Calculator** just above the `print()` function.
 
-* We can add our variable to the f-string in the print() function, right next to the grade.
+* We can add our variable to the **f-string** in the print() function, right next to `{grade_average}`.
+* We can put it in parenthesis to separate it a bit from the `grade_average`.
   * `({letter_grade})`
-  * We can put it in parenthesis to separate it a bit from the `grade_average`.
 
 ```python
 """
@@ -229,7 +253,9 @@ print(f'''
 ''')
 ```
 
-When we run the program, we should get the following, notice the **letter grade** after the **Final grade**.
+When we run the program, we should get the following.
+
+> Notice the **letter grade** after the **Final grade**.
 
 ```python
 '''
