@@ -4,7 +4,7 @@ title: Letter grade - if Conditional Statement - 07
 categories: [if, Comparison operators, Boolean operators, Multiway branching]
 ---
 
-In this tutorial we are going to edit the previews Grade Calculator adding the code needed to display a letter grade, next to final grade average. We will use the **conditional statement** `if` and **comparison operators** `>=` and `>`.
+In this tutorial we are going to edit the previews Grade Calculator adding the code needed to display a letter grade. We will use the **conditional statement** `if` and **comparison operators** greater than or equal to, `>=` and greater than `>`.
 
 <a href="https://www.patreon.com/bePatron?u=15482170" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
 
@@ -46,7 +46,7 @@ else:
 
 We used the **equality** `==` operator above to check if a `condition` was equal `==` to `True`.
 
->Notice **equality** is dentoed by double `==`, but variable assignment is dentoed by `=`, cause of commun human error at times when not used properly.
+> Notice **equality** is indicated by double `==`, but variable assignment is indicated by `=`, cause of commun human error at times when not used properly.
 
 | Name                  | symbol |
 | --------------------- | ------ |
@@ -58,7 +58,7 @@ We used the **equality** `==` operator above to check if a `condition` was equal
 | greater than or equal | `>=`   |
 | membership            | `in`   |
 
-Lets look at some example of other **comparison operators**.
+Lets look at some examples of other **comparison operators**.
 
 * **Inequality** `!=`
 
@@ -83,17 +83,17 @@ True
 
 ### Boolean Operators
 
-We can also do multiple comparisons by using a boolean operator lets use `or`, boolean because when use it will return ether `True` or `False`
+We can also do multiple comparisons by using a boolean operator, lets use `or`, boolean because when used, it will return ether `True` or `False`
 
-> BTW: `True == 1` and `False == 0` try it!
+> BTW: `True == 1` and `False == 0`, try it!
 
 ```python
 >>> True + 1
 2
 ```
 
-* By using the boolean operator, `or`, we can test if any of the two comparative statements below are `True`
-  * It returns `True` because one condition passed the test `n < 10`
+* By using the boolean operator, `or`, we can test if any of the two comparative statements below are `True`.
+  * It returns `True` because one condition passed the test, `n < 10`.
 
 ```python
 >>> n = 5
@@ -101,10 +101,10 @@ We can also do multiple comparisons by using a boolean operator lets use `or`, b
 True
 ```
 
-* When we use `and` both comparative statements tested need to pass for it to be `True`.
+* When we use `and` both comparative statements tested, need to pass, for the statements to be `True`.
 * In this case is `False`.
-  * `5 < 5` is `False`
-  * immediately returning `False`.
+  * Because `5 < 5` is `False`
+    * Immediately returning `False`.
 
 ```python
 >>> n = 5
@@ -112,7 +112,7 @@ True
 False
 ```
 
-* An alternative to using the comparison `and` above, remove the `and` comparison and the variable `n`.
+* An alternative to using the comparison `and` above, remove the `and` comparison and one the variable `n`.
   * This `5 < n and n < 10` is the same as `5 < n < 10`
 
 ```python
@@ -129,7 +129,7 @@ Multiway Branching allows to have multiple conditions tested in a sequence by th
 * `elif` is used to tie multiple `if` statements together.
 * You can have any number of `elif` statements as you like.
 * It will execute the first test is passed, in the case `True`.
-  * Below none of the conditions are met until it reaches `color == "yellow"`
+  * Below none of the conditions are met until it reaches `color == "yellow"`.
 
 > Notice how we are using the **f-string** format to pass the `{color}` variable.
 
@@ -166,9 +166,9 @@ So our later grade ranges would be:
 | D      | 60 to 69    |
 | F      | < to 60     |
 
-For these many conditions to be tested, we would have to use Multi Branching, `elif` between the first `if` and the `else` statements
+For these many conditions to be tested, we would have to use Multi Branching, `elif` between the first `if` and the `else` statements.
 
-We are going to say `if` `grade_average` is between **100** and **86** then it needs to return the **letter A** and so on down the line with all the letter grades.
+We are going to say `if` `grade_average` is between **100** and **86** then it needs to return the **letter A** and so on down the line, with all the letter grades.
 
 * We could write it like this:
   * `if 100 >= grade_average and grade_average >= 90:`.
@@ -199,13 +199,13 @@ else:
 
 ## Add code block to Grade Calculator
 
-* We need to do two things
-  * Add the conditional code block to the **Grade Calculator script**.
-  * And the `letter_grade` variable to the **f-string**.
+* We need to do two things:
+  1. Add the conditional code block to the **Grade Calculator script**.
+  2. And the `letter_grade` variable to the **f-string**.
 
 * Lets copy the code block and paste it to the **Grade Calculator** just above the `print()` function.
 
-* We can add our variable to the **f-string** in the print() function, right next to `{grade_average}`.
+* We can add our variable to the **f-string** in the `print()` function, right next to `{grade_average}`.
 * We can put it in parenthesis to separate it a bit from the `grade_average`.
   * `({letter_grade})`
 
