@@ -71,6 +71,7 @@ Try it in your IDLE interactive session:
 ```python
 students_name = ("Andy", "Mary", "Jesse", "Steven")
 ```
+
 ## Built-in functions
 
 We are going to introduce a few new **built-in functions** and combine them with others we have used before to write our application.
@@ -431,7 +432,7 @@ That is it for our grade calculator program, it is very basic, but I got a chanc
 
 ## Next tutorial
 
-We are going to assign a letter grade to the student based on their `grade_average`, I will introduce `for loop` and `while loop`.
+We are going to edit this program, Grade Calculator, and add letter grades to be display right next to final grade average.
 
 ## Things to try
 
