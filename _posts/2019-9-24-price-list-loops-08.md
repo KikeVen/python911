@@ -22,13 +22,13 @@ We are going to learn the following in order to complete our challenge
 
 ## while and for loops
 
-Are expressions allowing use to repeat other expressions over and over. Python has two main type of loops, `while` and `for` loops. while loops are used for general purpose and for loops are mainly use to execute blocks of codes on iterable items, like lists, Tuples, dictionaries etc.
+Are expressions allowing use to repeat other expressions over and over. Python has two main type of loops, `while` and `for` loops. `while` loops are used for general purpose and `for` loops are mainly use to execute blocks of codes on iterable items like lists, Tuples, dictionaries etc.
 
 ### while loops
 
-As the most general of the iterating tools, with a test statement at the top, the while loop will continue to execute the code block beneth it until the test at the top of the while loop condition's changes.
+As the most general of the iterating tools, with a test statement at the top, the `while` loop will continue to execute the code block beneath it until the test at the top of the `while` loop condition's changes.
 
-> To execute a loop in a **Python Interactive Seesion**, you need to add four spaces for indentation below the header and press the `Enter` key twice after the last line of the loop
+> Note: To execute a loop in a **Python Interactive Seesion**, you need to add four spaces for indentation below the header and press the `Enter` key twice after the last line of the loop.
 
 ```python
 >>> counter = 1
@@ -49,21 +49,21 @@ As the most general of the iterating tools, with a test statement at the top, th
 ```
 
 * In the example above, the loop starts with:
-  * `while`
+  * `while`.
 * And the test is:
-  * `counter <= 10`
+  * `counter <= 10`.
 * And the colon signifies end test statement:
   * `:`
 * Any indented code below this line is part of the loop.
   * The `print()` function will print an asterisk, `*`, will be multipled by the value of `counter`:
-    * `print('*' * counter)`
-  * Then the value of `counter` will be updated by a count of 1
-    * `counter += 1`
-* It will continue to execute updating `counter` until the value of counter is less than or equal to 10
+    * `print('*' * counter)`.
+  * Then the value of `counter` will be updated by a count of 1.
+    * `counter += 1`.
+* It will continue to execute updating `counter` until the value of counter is less than or equal to 10.
 
 #### while infinite loop
 
-There are times where we could write an infinite loop and without any methods to stop the loop it will continue to run for ever. We don't want this unless we use other loop statements to stop the loop, like `brake` we will cover these later
+There are times where we could write an infinite loop and without any methods to stop the loop it will continue to run for ever. We don't want this unless we use other loop statements to stop the loop, like `brake` we will cover these later.
 
 > To stop an infinite loop, press the `Ctrl-C` keys
 
@@ -80,9 +80,9 @@ I am an infinite loop
 
 for loops are iterators used to go through items in any sequence, they work with **Tuples**, **Lists**, **Dictionaries**, **Strings**, **Files** and other iterables.
 
-The `for` line is the header, in it we create a new variable, in this case `fruit` it is use to assign each item in the `all_fruits` Tuple as the loop iterates through the tuple.
+The `for` line is the **header**, in it we create a new variable. In this case `fruit`, it is use to assign each item in the `all_fruits` Tuple, as the loop iterates through the tuple.
 
-Each item, `fruit`, is tested in the if statement, if the condition is met, it will print something, otherwise, `else` it will print something else.
+Each item, `fruit`, is tested in the `if` statement, if the condition is met, it will print something, `else` it will print something else.
 
 ```python
 all_fruits = ('Bananas', 'Apples', 'Lemons', 'Grapes', 'Nectarines', 'Oranges')
@@ -126,12 +126,14 @@ while n <= 10:                  # test for n
         continue                # go to the top
     print(f'{n}', end = ' ')    # else print even number
                                 # end=' ' prints n horizontally
-# 1 3 5 7 9 11
+# 2 4 6 8 10
 ```
 
 #### break and else
 
-We may want a loop that test n to be less than or equal to `20`, if `n` is an even number `and` greater than `17`, then print something and `break`. If the condition is not met, that is unable to find/reach an even number which greater than 17, then `else` statement will be printed.
+We may want a loop that test `n` to be less than or equal to `20`, if `n` is an even number `and` greater than `17`, then print something and `break`. If the condition is not met, that is unable to find/reach an even number greater than 17, then `else` statement will be printed.
+
+> Look at the comments in the code below, prefixed by #, for a line by line explanation.
 
 ```python
 n = 0
@@ -152,7 +154,7 @@ The `zip()` function is very useful for combining items in two separate list, sp
 
 Lets create a "static multiplication" table for the number seven, static because I am going to hard code all the numbers in the tuples, there are ways of creating these list dynamically, we will learn more about that later. Right now we are just going to focus on the `zip()` function.
 
-The two tuples have the same amount of object, 10.
+The two tuples have the same amount of objects, 10.
 
 ```python
 tuple_1 = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
@@ -165,16 +167,16 @@ We are going to create a for loop and use the `zip()` function in the header.
 * In the code block we can take each number, `n1` and `n2`, returned by the iteration and print it as well as create an expression.
 * The loop will execute each pair until the tuples are exhausted.
 
-> The `zip()` function will truncate the results, if the lists are not the same length to the shortest of the lists.
+> If the lists are not the same length, the `zip()` function will truncate the results to the shortest of the lists.
 
 ```python
 for (n1, n2) in zip(tuple_1, tuple_2):
     print(f'{n1} x {n2} = {n1 * n2}')
 ```
 
-The for loop above will print the follwing to the screen.
+The for loop, above, will print the follwing to the screen.
 
-```txt
+```cmd
 1 x 7 = 7
 2 x 7 = 14
 3 x 7 = 21
@@ -216,6 +218,13 @@ We should use a Tuple since the 'lists' don't need any modification. Lets create
 ```
 
 ### Write the `for` loop
+
+* In the header line of our `for` loop, we need to create two variables, `fruit` and `price`, these will hold each item of the pair returned by the `zip()` function during each iteration.
+
+* In the same line, we write the zip() function, including each tuple name to be zipped.
+  * `zip(fruits, prices)`
+
+* The code block will print each returned pair until the tuples are done iterating.
 
 ```python
 for (fruit, price) in zip(fruits, prices):
@@ -266,7 +275,7 @@ print(footer + '+')
 
 The script will display
 
-```txt
+```cmd
 -- Fruit Price List --+
 ----------------------+
 Bananas:         $3.25
@@ -288,7 +297,7 @@ With our new found knowledge, we move on to the next town... TBA
 
 ## Things to try
 
-* Try creating a for loop with `break` and `else` staments in the loop
+* Try creating a for loop with `break` and `else` statements in the loop.
 * Try adding more items to one of the Tuples and see what happens.
 
 ## Question
