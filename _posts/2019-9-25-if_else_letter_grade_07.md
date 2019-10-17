@@ -46,7 +46,7 @@ else:
 
 We used the **equality** `==` operator above to check if a `condition` was equal `==` to `True`.
 
-> Notice **equality** is indicated by double `==`, but variable assignment is indicated by `=`, cause of commun human error at times when not used properly.
+> Notice **equality** is indicated by double `==`, but variable assignment is indicated by `=`, cause of common human error at times when not used properly.
 
 | Name                  | symbol |
 | --------------------- | ------ |
@@ -274,7 +274,7 @@ When we run the program, we should get the following.
 
 ## Next tutorial
 
-TBA (multiplication table?)
+A shop (bodega) owner wants you to print a price list of fruits and vegetables, the challenge, he has the names list separate from the price list
 
 ## Things to try
 
