@@ -257,8 +257,7 @@ When we run the program, we should get the following.
 
 > Notice the **letter grade** after the **Final grade**.
 
-```python
-'''
+```sql
 +------------------------------------------------+
  Student Name: Beth O'Brien
 +------------------------------------------------+
@@ -267,7 +266,6 @@ When we run the program, we should get the following.
  Semester grades:
  [75.3, 75.8, 80.3, 83.5, 87.9, 89.5, 90.5, 95.0]
 +------------------------------------------------+
-'''
 ```
 
 ---

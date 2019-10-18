@@ -189,7 +189,6 @@ F-strings allow us to imbed an expression inside a string.
 * f-string are easier to use.
 * f-strings execute faster than the other two types of string formatting.
 
-
 ```python
 >>> student_name = "Beth O'Brien"
 >>> f"Student name: {student_name}"
@@ -197,7 +196,7 @@ F-strings allow us to imbed an expression inside a string.
 
 So the code above would print to screen as follow, where the variable in **brackets** `{student_name}` gets replaced by its value.
 
-```tex
+```sql
 Student name: Beth O'Brien
 ```
 
@@ -284,8 +283,7 @@ grade_average = round(sum_grade/number_of_grades, 1)
 
 Lets format and print the results to screen, we would like it to look like this:
 
-```python
-'''
+```sql
 +------------------------------------------------+
  Student Name: Beth O'Brien
 +------------------------------------------------+
@@ -294,7 +292,6 @@ Lets format and print the results to screen, we would like it to look like this:
  Semester grades:
  [75.3, 75.8, 80.3, 83.5, 87.9, 89.5, 90.5, 95.0]
 +------------------------------------------------+
-'''
 ```
 
 #### First lets make our horizontal separator
@@ -413,8 +410,7 @@ print(f'''
 
 When you run the program it should print the results as formatted.
 
-```python
-'''
+```sql
 +------------------------------------------------+
  Student Name: Beth O'Brien
 +------------------------------------------------+
@@ -423,7 +419,6 @@ When you run the program it should print the results as formatted.
  Semester Grades:
  [75.3, 75.8, 80.3, 83.5, 87.9, 89.5, 90.5, 95.0]
 +------------------------------------------------+
-'''
 ```
 
 That is it for our grade calculator program, it is very basic, but I got a chance to introduce some new programming concepts.
