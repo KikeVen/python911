@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Letter grade - if Conditional Statement - 07
+title: Lesson 7 - Letter grade ("if" Conditional Statement)
 categories: [if, Comparison operators, Boolean operators, Multiway branching]
 ---
 

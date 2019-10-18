@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Price list - loops, zip() - 08
+title: Lesson 8 - Shop price list (loops, zip())
 categories: [for/while loops, zip()]
 ---
 

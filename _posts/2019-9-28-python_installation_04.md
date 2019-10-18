@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Python Interpreter, IDLE and Intereactive Session - Python Install - 04
+title: Lesson 4 - Python Installation (The Python Interpreter, IDLE and Intereactive Session)
 categories: [Python interpreter, IDLE, Intereactive Session, Win, Mac, Linux]
 ---
 

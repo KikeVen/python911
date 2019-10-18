@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Student Grade Calculator, Tuples, f-string, built-in function - 06
+title: Lesson 6 - Student Grade Calculator (Tuples, f-string, built-in function)
 categories: [Tuples, f-string, sorted (), min (), max (), sum (), len ()]
 ---
 
