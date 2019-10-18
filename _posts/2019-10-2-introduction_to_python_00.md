@@ -16,7 +16,7 @@ Each class will begin with a challenge, description, Python topics to cover, exp
 
 Each lesson is relatively short, with purpose and a definite end. Each lesson builds on top of the one before, so it is important to keep sequence, as this is not reference documentation.
 
-At the end of each Lesson, the challenge for the next lesson is introduced, followed by a section with exorcises and questions.
+At the end of each Lesson, the challenge for the next lesson is introduced, followed by a section with exercises and questions.
 
 In order to compleat the challenges, the scope is a bit more narrow than traditional more theoretical courses, every effort to keep the broadest scope possible is taken and to follow up with more explanations and traditional teaching as the course progresses.
 
