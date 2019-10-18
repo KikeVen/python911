@@ -176,7 +176,7 @@ for (n1, n2) in zip(tuple_1, tuple_2):
 
 The for loop, above, will print the follwing to the screen.
 
-```cmd
+```sql
 1 x 7 = 7
 2 x 7 = 14
 3 x 7 = 21
@@ -275,7 +275,7 @@ print(footer + '+')
 
 The script will display
 
-```cmd
+```sql
 -- Fruit Price List --+
 ----------------------+
 Bananas:         $3.25
