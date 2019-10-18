@@ -10,7 +10,7 @@ Support me on Patreon.
 
 <a href="https://www.patreon.com/bePatron?u=15482170" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
 
-Because we are introducing Python with projects and example, the scope may look narrow and somewhat out of 'traditional' order. This is taking a more practical approach to learning Python.
+Because we are introducing Python with projects and examples, the scope may look narrow and somewhat out of 'traditional' order. This is taking a more practical approach to learning Python.
 
 Each class will begin with a challenge, description, Python topics to cover, explanation and sample and lastly we solve the challenge.
 
@@ -41,4 +41,4 @@ Thank you
 Python 911
 Enrique Bruzual
 
-p.s. Feel free to share this link with others who might benefit from this course.
+P.S. Feel free to share this link with others who might benefit from this course.
