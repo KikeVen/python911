@@ -8,7 +8,7 @@ We have a new challenge, a shop (bodega) owner wants you to print a price list o
 
 <a href="https://www.patreon.com/bePatron?u=15482170" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
 
-You will have to write a program to store all the names and prices, then loop though them to combine them and get the list the customer ones.
+You will have to write a program to store all the names and prices, then loop through them to combine them and get the list the customer ones.
 
 We are going to learn the following in order to complete our challenge
 
@@ -28,7 +28,7 @@ Are expressions allowing use to repeat other expressions over and over. Python h
 
 As the most general of the iterating tools, with a test statement at the top, the `while` loop will continue to execute the code block beneath it until the test at the top of the `while` loop condition's changes.
 
-> Note: To execute a loop in a **Python Interactive Seesion**, you need to add four spaces for indentation below the header and press the `Enter` key twice after the last line of the loop.
+> Note: To execute a loop in a **Python Interactive Session**, you need to add four spaces for indentation below the header and press the `Enter` key twice after the last line of the loop.
 
 ```python
 >>> counter = 1
@@ -118,6 +118,8 @@ Oranges
 
 We may write a loop that counts to ten but we only want it to print the even numbers.
 
+> Look at the comments in the code below, prefixed by #, for a line by line explanation.
+
 ```python
 n = 0
 while n <= 10:                  # test for n
@@ -132,8 +134,6 @@ while n <= 10:                  # test for n
 #### break and else
 
 We may want a loop that test `n` to be less than or equal to `20`, if `n` is an even number `and` greater than `17`, then print something and `break`. If the condition is not met, that is unable to find/reach an even number greater than 17, then `else` statement will be printed.
-
-> Look at the comments in the code below, prefixed by #, for a line by line explanation.
 
 ```python
 n = 0
@@ -150,7 +150,7 @@ else:                           # If the test in while were less than 18
 
 ## The zip() built-in function
 
-The `zip()` function is very useful for combining items in two separate list, specially if they are paired by position.
+The `zip()` function is very useful for combining items from two separate list, specially if they are paired by position.
 
 Lets create a "static multiplication" table for the number seven, static because I am going to hard code all the numbers in the tuples, there are ways of creating these list dynamically, we will learn more about that later. Right now we are just going to focus on the `zip()` function.
 
@@ -221,7 +221,7 @@ We should use a Tuple since the 'lists' don't need any modification. Lets create
 
 * In the header line of our `for` loop, we need to create two variables, `fruit` and `price`, these will hold each item of the pair returned by the `zip()` function during each iteration.
 
-* In the same line, we write the zip() function, including each tuple name to be zipped.
+* In the same line, we write the `zip()` function, including each tuple name to be zipped.
   * `zip(fruits, prices)`
 
 * The code block will print each returned pair until the tuples are done iterating.
@@ -256,7 +256,7 @@ footer = len(header) * '-'
 In the script below we have a couple of new expressions
 
 * **Concatenation**: joining two string with a + sign into a new string.
-* **Tab**: in a string `\t` expression, adds a tab
+* **Tab**: in a string `\t` expression, adds a tab.
 
 ```python
 fruits = ('Bananas', 'Apples', 'Lemons', 'Grapes', 'Nectarines', 'Oranges')
