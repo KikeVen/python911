@@ -12,8 +12,6 @@ For this lesson we won't have a project, as there is too much to cover. In futur
 
 As mentioned before, **strings** are immutable primitive types, they can be defined as a **sequence of characters**.
 
-[graphic]
-
 For this lesson the following topics will be covered.
 
 * String characters in Python
@@ -27,13 +25,13 @@ For this lesson the following topics will be covered.
 
 ## String characters in Python
 
-In Python, **strings** are represented as a **sequence of immutable Unicode characters**. Unicode includes every character in all languages
+In Python, **strings** are represented as a **sequence of immutable Unicode characters**. Unicode includes every character in all languages.
 
 `string = "Sparse is better than dense."`
 
-Each character has a numerical value. We will have to elicit the help of a couple of built in function, `ord()` and `chr()`
+Each character has a numerical value. We will have to elicit the help of a couple of built in function, `ord()` and `chr()`.
 
-* `ord()` : Converts character to an integer. **Encoding**
+* `ord()` : Converts character to an integer.
 
 ```python
 >>> ord('n')
@@ -42,7 +40,7 @@ Each character has a numerical value. We will have to elicit the help of a coupl
 78
 ```
 
-* `chr()` : Converts an integer to a number. **Decoding**
+* `chr()` : Converts an integer to a number.
 
 ```python
 >>> chr(56)
@@ -53,7 +51,7 @@ Each character has a numerical value. We will have to elicit the help of a coupl
 
 ### The string object
 
-We can turn an object into a string by using the built in function `str()`
+We can turn an object into a string by using the built in function `str()`.
 
 ```python
 >>> type(45)
@@ -66,7 +64,7 @@ True
 
 ## Creating a string
 
-String are created by wrapping characters in single, double or triple quotes
+String are created by wrapping characters in single, double or triple quotes.
 
 > Notice, the quotes must be the same at the start and end of the string.
 
@@ -103,7 +101,7 @@ NameError: name 'string' is not defined
 
 ## Strings indexing and slicing
 
-Strings as a series of positional characters are indexed from left to right starting with the number 0. and right to left with negative numbers starting with -1
+Strings as a series of positional characters are indexed from left to right starting with the number 0. and right to left with negative numbers starting with -1.
 
 | P   | Y   | T   | H   | O   | N   |
 | --- | --- | --- | --- | --- | --- |
@@ -140,7 +138,7 @@ Is a more general form of indexing, designed to  extract an entire section in a 
 'yth'
 ```
 
-In the example above, we sliced from index 1 up to (but not including) index 4. `[1:4]`
+In the example above, we sliced from index 1 up to (but not including) index 4. `[1:4]`.
 
 | Y   | T   | H   |     |
 | --- | --- | --- | --- |
@@ -150,7 +148,7 @@ Lets assign the string `"python"` to the variable `f` to simplify our examples.
 
 * `f = 'python'`
 
-If we omit the first index, Python assumes it starts at `0`
+If we omit the first index, Python assumes it starts at `0`.
 
 ```python
 >>> f[:3]
@@ -170,7 +168,7 @@ If we omit the second index `[n:]`, Python will slice from `n` to the end of str
 'thon'
 ```
 
-To return the compleat string we can indicated as follow
+To return the compleat string we can indicated as follow.
 
 ```python
 >>> f[:]
@@ -186,7 +184,7 @@ To get an empty string, you can pass two indexes of equal value `[n:n]` or overl
 ''
 ```
 
-Python slicing has a third index used to indicate `stepping` or by increments of `n`
+Python slicing has a third index used to indicate `stepping` or by increments of `n`.
 [x:y:n]
 
 ```python
@@ -201,7 +199,7 @@ We can also give a negative index for stepping [x:y:-n]. Python will step backwa
 'nhy'
 ```
 
-When there is no first or second index, the string indexes are reversed. To reverse a string we can use the following format `[::-1]`
+When there is no first or second index, the string indexes are reversed. To reverse a string we can use the following format `[::-1]`.
 
 ```python
 >>> f[::-1]
@@ -229,12 +227,12 @@ n
 
 There are a number of operators that can be used with strings adding even more flexibility to strings.
 
-| Operator | Description                            |
-| -------- | -------------------------------------- |
-| `+`      | Joins two or more strings together     |
-| `*`      | Creates multiple copies of string      |
-| `in`     | Membership of string in another string |
-| `not in` | bla, bla                               |
+| Operator | Description                             |
+| -------- | --------------------------------------- |
+| `+`      | Joins two or more strings together.     |
+| `*`      | Creates multiple copies of string.      |
+| `in`     | Membership of string in another string. |
+| `not in` | Is the opposite of the `in` operator.   |
 
 ### The `+` operator
 
@@ -291,7 +289,7 @@ True
 
 Just as python has built-in functions, procedures which can be called to perform specific tasks on an object, ie. `len('hello')`.
 
-Python also offers built-methods, much like functions perform a procedure on a specific object. Methods are part of class, they can be written specifically for an object type, hence "string method" these are written to perform tasks on string objects.
+Python also offers built-in methods, much like functions perform a procedure on a specific object. Methods are part of a class, they can be written specifically for an object type, hence "string method", these are written to perform tasks on string objects.
 
 The way to call an object (string) method, is to write the object followed by `.method_name()`.
 
@@ -304,7 +302,7 @@ There are over 40 built-in string methods available, we are just going to cover 
 This method capitalizes a string.
 
 ```python
->>> x = 'hello '
+>>> x = 'hello'
 >>> x.capitalize()
 'Hello'
 ```
@@ -314,8 +312,9 @@ This method capitalizes a string.
 Use the this method to turn a string to all upper case.
 
 ```python
->>> x.upper()
-'HELLO MAN'
+>>> u = 'hello world'
+>>> u.upper()
+'HELLO WORLD'
 ```
 
 ### `.lower()`
@@ -338,7 +337,7 @@ It will turn a string in to a title.
 'Beautiful Is Better Than Ugly.'
 ```
 
-Python also offers a number of Methods specifically for searching for a substring in a string 
+Python also offers a number of Methods specifically for searching for a substring in a string.
 
 ### `.count()`
 
@@ -361,7 +360,7 @@ We can also limit the count to a specific range by passing a starting and ending
 
 ### `.startswith()` and `.endswith()`
 
-These two methods determin if a target string starts or ends with a particular substring. The methods will returtn `True` or `False`
+These two methods determines if a target string starts, or ends, with a particular substring. The methods will return `True` or `False`.
 
 #### `.startswith()`
 
@@ -384,7 +383,7 @@ There are a number of very useful formatting methods. They allow us to enhance a
 
 ### `.center()`
 
-We can center a strings on a given field of spaces
+We can center a strings on a given field of spaces.
 
 ```python
 >>> 'Beautiful'.center(15)
@@ -409,7 +408,7 @@ Aside fom centering a string we can also left and right justify it.
 '      Beautiful'
 ```
 
-we can also fill the range with a character
+we can also fill the range with a character.
 
 ```python
 >>> 'Beautiful'.ljust(15, '-')
@@ -422,7 +421,7 @@ we can also fill the range with a character
 
 Another useful string method are the `.strip()`, `.lstrip()` and `.rstrip()`
 
-When we don't specify an argument, Python will strip all the leadding and trailling spaces depending on the type of strip method we use.
+When we don't specify an argument, Python will strip all the leading and trailling spaces depending on the type of strip method we use.
 
 ```python
 >>> n = '   Beautiful   '
@@ -498,11 +497,11 @@ With the formatting expression one must specify the type of object being replace
 | i    | Integer                                |
 | f    | Floating-point decimal                 |
 
-You may look at the Python documentation for more information on formatting expressions
+You may look at the Python documentation for more information on formatting expressions.
 
 ### String formatting method
 
-The formatting method, uses a method call to format an string object. The string becomes a template and the format method argument to pass values to the template.
+The formatting method, uses a method call to format a string object. The string becomes a template and the format method argument to pass values to the template.
 
 The values passed as arguments in the formatting method are positional.
 
@@ -561,15 +560,15 @@ TBA: most definitely will have something to do with strings.
 
 ## Things to try
 
-Read through the tutorial, and find some of the topics I asked to search in the documentation
+Read through the tutorial, and find some of the topics I asked to search in the documentation.
 
-* More on **f-strings**
-* Other formmating expression codes
-* Find other string methods we didn't cover here
+* More on **f-strings**.
+* Other formatting expression codes.
+* Find other string methods we didn't cover here.
 
 ## Question
 
-* How do you reverse the order of a string? so it prints backwards
+* How do you reverse the order of a string? so it prints backwards.
 * What are the three types of string formatting?
 * What string method would you use to create a copy of string all lower case?
 
