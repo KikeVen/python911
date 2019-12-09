@@ -293,7 +293,9 @@ This concludes our commissioned script for the Bodega owner, we will able to get
 
 ## Next tutorial
 
-With our new found knowledge, we move on to the next town... TBA
+With our new found knowledge, we move on to the next town...
+
+* We have to do some theory and reflection before we can move on to the next big challenge, Strings are the Ninja starts of Python programming.
 
 ## Things to try
 
