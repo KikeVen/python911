@@ -4,13 +4,13 @@ title: Lesson 10 - Language processing (Strings, Lists, Dictionaries)
 categories: [import, .maketrans(), .translate(), Counter(), .most_common()]
 ---
 
-As part of a larger NLP (Natural Language Processing) project, we have been ask to clean up some text, by converting Strings to Lists, and do some basic language classification.
+As part of a larger NLP (Natural Language Processing) project, we have been ask to clean up some text, by converting Strings to Lists, and do some basic text processing.
 
 <a href="https://www.patreon.com/bePatron?u=15482170" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
 
 > **Important**: This is not an NLP tutorial, this is an introductory Python lesson.
 
-Although most NLP research, projects and products rely on pre-built libraries and can be very complex in nature, I am going to introduce some basic NLP consepts to illustrata how we can apply, what we are learning, to real world scenarios.
+Although most NLP research, projects and products rely on pre-built libraries and can be very complex in nature, I am going to introduce some basic NLP concepts to illustrata how we can apply, what we are learning, to real world scenarios.
 
 One of the biggest challenges in data analysis, is getting the data to a state that can be useful. In our particular case, we have been ask to write some code to pre-process some text and do some basic calculations.
 
@@ -37,7 +37,7 @@ One of the biggest challenges in data analysis, is getting the data to a state t
 
 ## Project description
 
-Write a script that can take a given, arbitrary string, 'clean it up' and return a **Word Frequency** (term for word count). It should return a list with pair tuples of word paired with frequency. Should be unpackable to be use with other operations.
+Write a script that can take a given, arbitrary string, 'clean it up' and return a **Word Frequency** (term for word count). It should return a list with pair tuples of word paired with frequency. Should be unpackable to be use in other operations.
 
 ## Understanding the requirements
 
@@ -57,11 +57,11 @@ Here is a diagram of what we are looking to accomplish.
 
 * We also need to remove common words that don't add value to this project, these are reffered as **Stop words**, such as **in**, **to**, **do**, **a**, **it**, **get** and so on.
 
-* In order to do a word count, we need to be able to iterate through a list of words, but we are given a string, and we can only iterate through each character. We need to learn how to convert a string to a group of words or (**Tokenize** the string)
+* In order to do a word count, we need to be able to iterate through a list of words, but we are given a string, and we can only iterate through each character. We need to learn how to convert a string to a group of words or (**Tokenize** the string).
 
 * Once we have pre-processed the text, we will have to get the actual word count (**Word Frequency**) from our input string.
 
-* We have to format the return values for displaying
+* We have to format the return values for displaying.
 
 > We will write a more detailed outline or algorithm, after we learn some new Python concepts.
 
@@ -79,7 +79,7 @@ Python comes with a built-in library, by importing them into our script, we can 
 
 At the top of our script we write `import`, followed by the module name.
 
-There are a few ways to import modules into our own programs, bellow are two examples.
+There are a few ways to import modules into our own programs, below are two examples.
 
 ```python
 import <module>
@@ -107,7 +107,7 @@ translation_table = str.maketrans("","","-!.,")
 
 ---
 
-> Python offers a constant listing the most commun characters in a string with `string.punctuation`
+> Python offers a constant listing the most common characters in a string with `string.punctuation`
 
 ```python
 >>> import string
@@ -115,7 +115,7 @@ translation_table = str.maketrans("","","-!.,")
 '!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~'
 ```
 
-If we want to add another character not found in `string.punctuation` we could _concantenate_ it with the missing characters for instance `A`.
+If we want to add another character not found in `string.punctuation` we could _concantenate_ it with the missing characters for instance `•`.
 
 ```python
 import string
@@ -124,7 +124,7 @@ print(punctuation)
 # !"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~•
 ```
 
-We can then use the new `punctuation` string with our `str.maketrans()` method
+We can then use the new `punctuation` string with our `str.maketrans()` method.
 
 ```python
 import string
@@ -176,7 +176,7 @@ Counter({'x': 4, 'n': 3, 'a': 2, 'b': 2, 't': 1, 'y': 1})
 
 ### string methods
 
-As per our **_String Tutorial_**, they perform a procedure on a specific string object.
+As per our **_String Tutorial_**, string methods perform a procedure on a specific string object.
 
 #### .lower()
 
@@ -202,7 +202,7 @@ The `.split()` method, splits a string into a list.
 
 #### .remove()
 
-The `.remove()` method removes a given object from a list. This method does not return any value.
+The `.remove()` method removes a given object from a list. This method does not return any values.
 
 ```python
 >>> split = str_txt.split()
@@ -215,27 +215,27 @@ The `.remove()` method removes a given object from a list. This method does not 
 
 ## Logic outline
 
-To further manipulate strings we can make use of the `string` build-in library. We first need to import it. We will also make use of another build-in library called `collections` to help us sort our results
+To further manipulate strings we can make use of the `string` build-in library. We first need to import it. We will also make use of another build-in library called `collections` to help us sort our results.
 
-1. `import` `string` and `collections`
-2. Assign given string to variable, `input_string`
-3. Turn `input_string` to all lower case, using `.lower()` method and assign to `lower_str`
-4. Create a list of unnecessary characters by using the `str.maketrans()` method, assign to `char_template`
-5. Remove unnecessary characters from `lower_str` using `.translate()` method and `char_template` as argument
-6. Turn the new string into a list by using `.strip()` method
-7. Create a tuple to hold a list of stopwords, `stopwords = ()`
-8. Write loop to remove stop words from `word_list`
-9. Use subclass `Counter()` to count frequency of words
-10. Use `.most_common()` to list only the n most common elements
-11. `for` loop to unpack and format the tuple list from sorted list
+1. `import` `string` and `collections`.
+2. Assign given string to variable, `input_string`.
+3. Turn `input_string` to all lower case, using `.lower()` method and assign to `lower_str`.
+4. Create a list of unnecessary characters by using the `str.maketrans()` method, assign to `char_template`.
+5. Remove unnecessary characters from `lower_str` using `.translate()` method and `char_template` as argument.
+6. Turn the new string into a list by using `.strip()` method.
+7. Create a tuple to hold a list of stopwords, `stopwords = ()`.
+8. Write loop to remove stop words from `word_list`.
+9. Use subclass `Counter()` to count frequency of words.
+10. Use `.most_common()` to list only the n most common elements.
+11. `for` loop to unpack and format the tuple list from sorted list.
 
 ## Writing the script
 
 We now have all wee need to write our script.
 
-1. A project description
-2. An understanding of what is required
-3. An outline
+1. A project description.
+2. An understanding of what is required.
+3. An outline.
 
 Lets begin by importing our modules.
 
@@ -316,18 +316,18 @@ copyright :  3
 """
 ```
 
-With the knowledge you have gained from this mini-course, we are able to write a pretty useful programs. Python offers many tools enableing programmers to focus on logic and implementation. As we write more complex the challenge will be in understanding requirements, writing a good program outline and finding the timely solutions for our problems.
+With the knowledge you have gained from this mini-course, we are able to write pretty useful programs. Python offers many tools enableing programmers to focus on logic and implementation. As we write more complex the challenge will be in understanding requirements, writing a good program outline and finding the timely solutions for our problems.
 
 ## Next tutorial
 
-We have been asked to turn our program into a module, write a new program that can import a text file and our new woe frequency module to process the text file.
+We have been asked to turn our program into a module, write a new program that can import a text file and our new word frequency module to process the text file.
 
 ## Things to try
 
 This project offers many opportunities to experiment with, we could use our results to generate other analysis.
 
 * Try other strings, and see if there are other stop words and characters you can add to improve your Word Frequency.
-* Try converting `lower_str` to sentences, then based on your Word Frequency results, choose the top three sentences that contain the top Word Frequency
+* Try converting `lower_str` to sentences, then based on your Word Frequency results, choose the top three sentences that contain the top Word Frequency.
 
 ## Question
 
