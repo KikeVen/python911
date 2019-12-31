@@ -32,7 +32,8 @@ Lesson_5: | In review | (Data type, primitive, none-primitives, mutables, immuta
 Lesson_6: | Grades calculator | (Tuples, f-string, sorted (), min (), max (), sum (), len ())
 Lesson_7: | Letter grade mod | (if, Comparison operators, Boolean operators, Multiway branching)
 Lesson_8: | Price list | (for/while loops, zip())
-Lesson_9: | TBA | ()
+Lesson_9: | String tutorial | slicing, functions and string methods
+Lesson_10:| Word frequency | 
 
 <a href="https://www.patreon.com/bePatron?u=15482170" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
 
