@@ -15,19 +15,17 @@ In order to complete our project, writing a python module, we need to learn new 
 * `open()` built-in function.
 * Import a custom module.
 
-[<img src="{{ site.baseurl }}/images/word_frequency.svg" alt="alt" style="width: 700px;"/>]({{ site.baseurl }}/images/word_frequency.svg)
-
 ## Custom function
 
 Functions are the power house of most programming languages. They may go by different names in other programming languages but the 'function' is the same, a block of reusable code.
 
 So far we have been writing sequential code, the script is executed in a linear fashion.
 
-[<img src="{{ site.baseurl }}/images/secuential_code.svg" alt="sequential code" style="width: 700px;"/>]({{ site.baseurl }}/images/secuential_code.svg)
+[<img src="{{ site.baseurl }}/images/secuential_code.svg" alt="sequential code" style="width: 400px;"/>]({{ site.baseurl }}/images/secuential_code.svg)
 
 Functions allow us to write reusable code blocks. Functions are very flexible, as they allow us to use parameters further generalizing their use.
 
-[<img src="{{ site.baseurl }}/images/function_order_of_execution.svg" alt="function execution" style="width: 700px;"/>]({{ site.baseurl }}/images/function_order_of_execution.svg)
+[<img src="{{ site.baseurl }}/images/function_order_of_execution.svg" alt="function execution" style="width: 400px;"/>]({{ site.baseurl }}/images/function_order_of_execution.svg)
 
 > The function block is skipped until it is called, then the code in the function is executed.
 
@@ -37,7 +35,7 @@ We already have written much code that could be used as a function, writing a ba
 * We write the body of the function.
 * And finally we call the function.
 
-[<img src="{{ site.baseurl }}/images/quick_function.svg" alt="quick function" style="width: 700px;"/>]({{ site.baseurl }}/images/quick_function.svg)
+[<img src="{{ site.baseurl }}/images/quick_function.svg" alt="quick function" style="width: 500px;"/>]({{ site.baseurl }}/images/quick_function.svg)
 
 ### Declare a function
 
@@ -170,7 +168,7 @@ As I stated before, all scripts in python are modules, but to properly use them 
 
 We can say a module has a header, body and footer.
 
-[<img src="{{ site.baseurl }}/images/python_module.svg" alt="Python module" style="width: 700px;"/>]({{ site.baseurl }}/images/python_module.svg)
+[<img src="{{ site.baseurl }}/images/python_module.svg" alt="Python module" style="width: 400px;"/>]({{ site.baseurl }}/images/python_module.svg)
 
 ### The header
 
@@ -263,7 +261,7 @@ What it means, that this script serves a dual purpose as a stand alone script an
 
 As our applications expand, we will have to access other file formats, other than `.py` files, such as `.txt`, `.csv`, `.pdf`, `.db` and many other file formats.
 
-[<img src="{{ site.baseurl }}/images/open_function.svg" alt="Open() file function" style="width: 700px;"/>]({{ site.baseurl }}/images/open_function.svg)
+[<img src="{{ site.baseurl }}/images/open_function.svg" alt="Open() file function" style="width: 400px;"/>]({{ site.baseurl }}/images/open_function.svg)
 
 For this we can use the `open()` built-in function, notice they are the same as custom functions. Notice how the function takes a positional argument and the rest are keyword arguments.
 
