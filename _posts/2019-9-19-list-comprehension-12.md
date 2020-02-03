@@ -31,7 +31,7 @@ We can **refactor** our code to one line of code, doing a similar operation insi
 
 ## List comprehencion
 
-A comprehencion is a less verbose way of writing an operation, it is a bit more advance.
+A comprehencion is a less verbose way of writing an operation, it is a bit more advanced.
 
 When ever you have an empty list, an iterable and appending the list with the results of the loop, then a list comprehencion can be written.
 
@@ -59,7 +59,7 @@ We get this:
 [1, 2, 3, 4, 5, 6, 7, 8, 9]
 ```
 
-A more unique way of writing the operation in python is to use a _list comprehencion_ which is written in the following format
+A more unique way of writing the operation in python is to use a **_list comprehencion_** which is written in the following format
 
 * **[expression _for_ item _in_ iterable]**
 
