@@ -17,7 +17,7 @@ We are going to rewrite a loop that appends a list, with an operation called **l
 
 ## `open_file.py` code review
 
-In our `open_file.py` file, we used our custom module to get a list of tuples with the top six words along with the frequency. We then passed the return value to a for loop, to unpack and only retrive the words, by appending a list.
+In our `open_file.py` file, we used our custom module to get a list of tuples with the top six words along with the frequency. We then passed the return value to a for loop, to unpack and only retrieve the words, by appending a list.
 
 ```python
 # where sorted_word_frequency is the variable holding
